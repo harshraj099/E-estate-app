@@ -8,7 +8,7 @@ import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
 import savedListingRouter from './routes/savedListing.route.js';
 import cookieParser from 'cookie-parser';
-
+console.log("HELLo"+ process.env.MONGO)
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
